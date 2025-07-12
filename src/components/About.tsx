@@ -26,7 +26,7 @@ export const About = () => {
               </div>
               
               <p className="text-foreground leading-relaxed mb-4">
-                I'm a frontend web developer with <span className="text-neon-violet font-semibold">4 years of experience</span> building 
+                I'm a frontend web developer with <span className="text-neon-violet font-semibold">5+ years of experience</span> building 
                 interactive websites and single-page applications. My passion lies in merging clean code with creative, 
                 fluid animation to create interfaces that don't just look good, but feel alive.
               </p>
@@ -36,6 +36,7 @@ export const About = () => {
                 storytelling. Every animation should serve a purpose - guiding users, providing feedback, or simply 
                 adding that extra touch of personality that makes an interface memorable.
               </p>
+              
             </div>
 
             <div className="glass p-6 rounded-lg">

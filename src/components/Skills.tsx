@@ -111,7 +111,7 @@ export const Skills = () => {
               </div>
               <div>
                 <p className="text-muted-foreground mb-3 italic">
-                  "Jordan transformed our static landing page into a dynamic experience. 
+                  "David transformed our static landing page into a dynamic experience. 
                   Our bounce rate dropped by 32%!"
                 </p>
                 <div>

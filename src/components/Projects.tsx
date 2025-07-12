@@ -19,7 +19,7 @@ const projects = [
     tech: ["HTML", "CSS", "Vanilla JS", "AOS.js"],
     animation: "Product cards slide/zoom on hover; cart flies in with keyframe motion",
     icon: ShoppingCart,
-    liveUrl: "https://glowcart.dev",
+    liveUrl: "https://depremixhotel.com/",
     githubUrl: "https://github.com/jordanlee/glowcart",
     gradient: "from-neon-violet to-neon-pink"
   },
@@ -114,7 +114,7 @@ export const Projects = () => {
                     variant="outline"
                     className="border-neon-violet hover:bg-neon-violet hover:text-background"
                     asChild
-                  >
+                  > 
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                       <Github className="h-3 w-3" />
                     </a>
@@ -139,7 +139,7 @@ export const Projects = () => {
             className="border-neon-teal hover:bg-neon-teal hover:text-background animated-underline"
             asChild
           >
-            <a href="https://github.com/jordanlee" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/David-Uko" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-5 w-5" />
               View All Projects on GitHub
             </a>

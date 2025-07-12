@@ -5,6 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from 'emailjs-com';
+
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,21 +24,37 @@ export const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setFormData({ name: "", email: "", message: "" });
-      
-      toast({
-        title: "Message sent! ✨",
-        description: "Thanks! Your message just danced into my inbox.",
-      });
-    }, 2000);
-  };
+  emailjs.send(
+    'service_xpjousd',     // 👉 Replace with your actual Service ID
+    'template_ameczia',    // 👉 Replace with your actual Template ID
+    {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+    },
+    '0_A8EvrwDCK-G0AH_'      // 👉 Replace with your actual Public Key (User ID)
+  ).then(() => {
+    setIsSubmitting(false);
+    setFormData({ name: "", email: "", message: "" });
+
+    toast({
+      title: "Message sent! ✨",
+      description: "Thanks! Your message just danced into my inbox.",
+    });
+  }).catch((error) => {
+    setIsSubmitting(false);
+    toast({
+      title: "Oops! Something went wrong",
+      description: "Please try again or contact me directly.",
+    });
+    console.error('EmailJS Error:', error);
+  });
+};
+
 
   return (
     <section id="contact" className="py-20 px-6 bg-card/30">
@@ -69,9 +87,15 @@ export const Contact = () => {
                   href="mailto:jordanlee.dev@gmail.com"
                   className="text-foreground hover:text-neon-teal transition-colors animated-underline"
                 >
-                  jordanlee.dev@gmail.com
+                  daviduko71@gmail.com
                 </a>
               </div>
+              <a 
+                  href="mailto:jordanlee.dev@gmail.com"
+                  className="text-foreground hover:text-neon-teal transition-colors animated-underline"
+                >
+                 Phone Number: +2349031484432
+                </a>
             </div>
 
             {/* Resume Download */}
@@ -107,7 +131,7 @@ export const Contact = () => {
                   <div className="text-sm text-muted-foreground">Projects Built</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-neon-violet">4+</div>
+                  <div className="text-2xl font-bold text-neon-violet">5+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
               </div>

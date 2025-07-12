@@ -48,7 +48,7 @@ export const Hero = () => {
           style={{ transitionDelay: '0.2s' }}
         >
           <div className="w-32 h-32 mx-auto rounded-full bg-gradient-card border-2 border-neon-teal glow-teal flex items-center justify-center">
-            <span className="text-4xl font-bold text-neon-teal">JL</span>
+            <span className="text-4xl font-bold text-neon-teal">DU</span>
           </div>
         </div>
 
@@ -61,7 +61,7 @@ export const Hero = () => {
         >
           <span className="block text-foreground">Hi, I'm</span>
           <span className="block bg-gradient-hero bg-clip-text text-transparent animate-pulse-glow">
-            Jordan
+            David Uko
           </span>
         </h1>
 
@@ -72,27 +72,20 @@ export const Hero = () => {
           }`}
           style={{ transitionDelay: '0.6s' }}
         >
-          <span className="animated-underline">I craft animated web interfaces</span>
+          <span className="animated-underline text-white">"I engineer sleek, high-performance websites and web apps using modern front-end and back-end technologies."</span>
         </div>
         
-        <p 
-          className={`text-lg md:text-xl text-muted-foreground mb-8 transition-all duration-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-          style={{ transitionDelay: '0.8s' }}
-        >
-          that move users.
-        </p>
+           <br />
 
         {/* Mission Statement */}
         <p 
-          className={`text-lg text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed transition-all duration-1000 ${
+          className={`text-lg text-white text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
           style={{ transitionDelay: '1s' }}
         >
-          A creative web developer who transforms ideas into engaging, fast, and interactive 
-          digital experiences using HTML, CSS, JavaScript, and animation frameworks.
+          A creative front-end and back-end web developer who transforms ideas into engaging, fast, and interactive 
+          digital experiences using HTML, CSS, JavaScript, React, PHP and other backend and animation frameworks and tools.
         </p>
 
         {/* CTA Buttons */}

@@ -1,0 +1,151 @@
+import { ExternalLink, Github, Zap, ShoppingCart, Camera } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+
+const projects = [
+  {
+    title: "PulseTrack",
+    description: "A real-time fitness dashboard web app that visualizes heart rate and movement using charts and animations.",
+    tech: ["React", "Tailwind CSS", "Chart.js", "GSAP"],
+    animation: "Scroll-triggered chart animations; animated dashboard transitions",
+    icon: Zap,
+    liveUrl: "https://pulse-track.vercel.app",
+    githubUrl: "https://github.com/jordanlee/pulsetrack",
+    gradient: "from-neon-teal to-neon-violet"
+  },
+  {
+    title: "GlowCart",
+    description: "An e-commerce UI concept with smooth product previews, cart animations, and light/dark toggle.",
+    tech: ["HTML", "CSS", "Vanilla JS", "AOS.js"],
+    animation: "Product cards slide/zoom on hover; cart flies in with keyframe motion",
+    icon: ShoppingCart,
+    liveUrl: "https://glowcart.dev",
+    githubUrl: "https://github.com/jordanlee/glowcart",
+    gradient: "from-neon-violet to-neon-pink"
+  },
+  {
+    title: "FrameFusion",
+    description: "A portfolio site for a photographer, featuring gallery animations and fullscreen modals with transitions.",
+    tech: ["Next.js", "Styled Components", "Framer Motion"],
+    animation: "Lazy-load gallery grid; lightbox pop-up with zoom/fade animations",
+    icon: Camera,
+    liveUrl: "https://framefusion.art",
+    githubUrl: "https://github.com/jordanlee/framefusion",
+    gradient: "from-neon-pink to-neon-teal"
+  }
+];
+
+export const Projects = () => {
+  return (
+    <section id="projects" className="py-20 px-6">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="bg-gradient-hero bg-clip-text text-transparent">
+              Featured Projects
+            </span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Showcasing interactive web experiences with smooth animations and modern tech stacks
+          </p>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <Card
+              key={project.title}
+              className="project-card glass border-0 group cursor-pointer overflow-hidden"
+              style={{
+                animationDelay: `${index * 0.2}s`
+              }}
+            >
+              <CardHeader className="relative pb-4">
+                {/* Project Icon */}
+                <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${project.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <project.icon className="h-6 w-6 text-background" />
+                </div>
+                
+                <CardTitle className="text-xl font-bold text-foreground group-hover:text-neon-teal transition-colors">
+                  {project.title}
+                </CardTitle>
+                <CardDescription className="text-muted-foreground">
+                  {project.description}
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent className="space-y-4">
+                {/* Tech Stack */}
+                <div>
+                  <h4 className="text-sm font-semibold text-neon-violet mb-2">Tech Stack</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tech.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-2 py-1 text-xs rounded-md bg-muted text-muted-foreground border border-border"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Animation Feature */}
+                <div>
+                  <h4 className="text-sm font-semibold text-neon-teal mb-2">Animation Highlight</h4>
+                  <p className="text-sm text-muted-foreground">{project.animation}</p>
+                </div>
+
+                {/* Action Buttons */}
+                <div className="flex gap-2 pt-4">
+                  <Button
+                    size="sm"
+                    className="flex-1 bg-neon-teal hover:bg-neon-teal/80 text-background font-medium"
+                    asChild
+                  >
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-1 h-3 w-3" />
+                      Live Demo
+                    </a>
+                  </Button>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="border-neon-violet hover:bg-neon-violet hover:text-background"
+                    asChild
+                  >
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <Github className="h-3 w-3" />
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+
+              {/* Hover Glow Effect */}
+              <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                <div className={`absolute inset-0 bg-gradient-to-r ${project.gradient} opacity-10 rounded-lg`} />
+              </div>
+            </Card>
+          ))}
+        </div>
+
+        {/* More Projects CTA */}
+        <div className="text-center mt-16">
+          <p className="text-muted-foreground mb-4">Want to see more of my work?</p>
+          <Button
+            variant="outline"
+            size="lg"
+            className="border-neon-teal hover:bg-neon-teal hover:text-background animated-underline"
+            asChild
+          >
+            <a href="https://github.com/jordanlee" target="_blank" rel="noopener noreferrer">
+              <Github className="mr-2 h-5 w-5" />
+              View All Projects on GitHub
+            </a>
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};

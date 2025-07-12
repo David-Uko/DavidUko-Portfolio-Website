@@ -61,7 +61,26 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Portfolio-specific colors
+				'neon-teal': 'hsl(var(--neon-teal))',
+				'neon-violet': 'hsl(var(--neon-violet))',
+				'neon-pink': 'hsl(var(--neon-pink))',
+				glass: 'hsl(var(--glass))',
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-glow': 'var(--gradient-glow)',
+			},
+			boxShadow: {
+				'neon': 'var(--shadow-neon)',
+				'violet': 'var(--shadow-violet)',
+				'card': 'var(--shadow-card)',
+			},
+			fontFamily: {
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'mono': ['JetBrains Mono', 'Monaco', 'monospace'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -1,12 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Hero } from "@/components/Hero";
+import { Projects } from "@/components/Projects";
+import { About } from "@/components/About";
+import { Skills } from "@/components/Skills";
+import { Contact } from "@/components/Contact";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Hero />
+      <Projects />
+      <About />
+      <Skills />
+      <Contact />
+      
+      {/* Footer */}
+      <footer className="py-8 px-6 border-t border-border">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-muted-foreground">
+            © 2024 Jordan Lee. Crafted with ❤️ and lots of animations.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };

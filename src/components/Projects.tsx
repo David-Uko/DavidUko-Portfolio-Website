@@ -4,22 +4,22 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const projects = [
   {
-    title: "PulseTrack",
-    description: "A real-time fitness dashboard web app that visualizes heart rate and movement using charts and animations.",
+    title: "Youth Music", 
+    description: "Youth Music is a leading charity dedicated to supporting young people through music—especially those facing social or economic barriers.",
     tech: ["React", "Tailwind CSS", "Chart.js", "GSAP"],
     animation: "Scroll-triggered chart animations; animated dashboard transitions",
     icon: Zap,
-    liveUrl: "https://pulse-track.vercel.app",
+    liveUrl: "https://www.youthmusic.org.uk/",
     githubUrl: "https://github.com/jordanlee/pulsetrack",
     gradient: "from-neon-teal to-neon-violet"
   },
   {
-    title: "GlowCart",
-    description: "An e-commerce UI concept with smooth product previews, cart animations, and light/dark toggle.",
+    title: "HomeSpace",
+    description: "HomeSpace is a stylish real estate website designed for showcasing properties with elegance and clarity.",
     tech: ["HTML", "CSS", "Vanilla JS", "AOS.js"],
-    animation: "Product cards slide/zoom on hover; cart flies in with keyframe motion",
+    animation: "Elements like text, images, and icons fade or slide into view as you scroll, creating a modern and polished feel that adds life to the layout while maintaining a professional look.",
     icon: ShoppingCart,
-    liveUrl: "https://depremixhotel.com/",
+    liveUrl: "https://bootstrapmade.com/demo/HomeSpace/",
     githubUrl: "https://github.com/jordanlee/glowcart",
     gradient: "from-neon-violet to-neon-pink"
   },

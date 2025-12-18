@@ -6,7 +6,7 @@ const projects = [
     {
     title: "Mita School",
     description: "At Mita School, we equip you with the practical skills needed to build successful careers in tech.whether you’re just starting out, switching paths, or upskilling for better opportunities. Every course is designed to be beginner-friendly, hands-on, and focused on real job outcomes",
-    tech: ["HTML", "CSS", "Vanilla JS", "AOS.js"],
+    tech: [ "JavaScript", "React", "PostgreSQL", "PHP"],
     animation: "Elements like text, images, and icons fade or slide into view as you scroll, creating a modern and polished feel that adds life to the layout while maintaining a professional look.",
     icon: ShoppingCart,
     liveUrl: "https://mitaschool.com/",
@@ -15,7 +15,7 @@ const projects = [
   {
     title: "Empower Her Remotely",
     description: "A platform built to equip men and women—especially those in underserved and underrepresented communities—with the knowledge, tools, and network they need to thrive in the global remote economy.",
-    tech: ["HTML", "CSS", "Vanilla JS", "AOS.js"],
+    tech: ["React", "PHP", "Vanilla JS", "AOS.js"],
     animation: "Elements like text, images, and icons fade or slide into view as you scroll, creating a modern and polished feel that adds life to the layout while maintaining a professional look.",
     icon: ShoppingCart,
     liveUrl: "https://www.empowerherremotely.com/",
@@ -25,7 +25,7 @@ const projects = [
   {
     title: "Jubilee Events",
     description: "Jubilee Events is a premium event planning and booking platform designed to help individuals effortlessly organize memorable moments such as weddings, surprise proposals, birthday celebrations, anniversaries, and other special occasions.",
-    tech: ["Next.js", "Styled Components", "Framer Motion"],
+    tech: ["TypeScript", "Laravel", "Framer Motion"],
     animation: "Lazy-load gallery grid; lightbox pop-up with zoom/fade animations",
     icon: Camera,
     liveUrl: "https://www.jubileeeventsyyc.org/",
@@ -34,16 +34,25 @@ const projects = [
     {
     title: "Dropps",
     description: "Droops Laundry is a convenient and reliable online laundry service platform designed to make washing and dry-cleaning effortless. The website allows users to schedule pick-ups and deliveries from the comfort of their homes, view service options, and track orders in real time",
-    tech: ["HTML", "CSS", "Vanilla JS", "AOS.js"],
+    tech: [ "Laravel", "Vanilla JS", "AOS.js"],
     animation: "Elements like text, images, and icons fade or slide into view as you scroll, creating a modern and polished feel that adds life to the layout while maintaining a professional look.",
     icon: ShoppingCart,
     liveUrl: "https://www.dropps.com/",
     gradient: "from-neon-violet to-neon-pink"
   },
     {
+    title: "Tweet Buzz",
+    description: "Droops Laundry is a convenient and reliable online laundry service platform designed to make washing and dry-cleaning effortless. The website allows users to schedule pick-ups and deliveries from the comfort of their homes, view service options, and track orders in real time",
+    tech: ["Python", "MySQL", "Vanilla JS", "AOS.js"],
+    animation: "Elements like text, images, and icons fade or slide into view as you scroll, creating a modern and polished feel that adds life to the layout while maintaining a professional look.",
+    icon: ShoppingCart,
+    liveUrl: "",
+    gradient: "from-neon-violet to-neon-pink"
+  },
+    {
     title: "Youth Music", 
     description: "Youth Music is a leading charity dedicated to supporting young people through music—especially those facing social or economic barriers.",
-    tech: ["React", "Tailwind CSS", "Chart.js", "GSAP"],
+    tech: ["React", "Tailwind CSS", "JavaScript", "PostgreSQL"],
     animation: "Scroll-triggered chart animations; animated dashboard transitions",
     icon: Zap,
     liveUrl: "https://www.youthmusic.org.uk/",

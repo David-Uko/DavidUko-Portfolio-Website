@@ -26,7 +26,7 @@ export const About = () => {
               </div>
               
               <p className="text-foreground leading-relaxed mb-4">
-                I'm a fullstack web developer with <span className="text-neon-violet font-semibold">5+ years of experience</span> building 
+                I'm a fullstack web developer with <span className="text-neon-violet font-semibold">6+ years of experience</span> building 
                 interactive websites and single-page applications. My passion lies in merging clean code with creative, 
                 fluid animation to create interfaces that don't just look good, but feel alive.
               </p>

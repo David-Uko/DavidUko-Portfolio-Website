@@ -72,7 +72,7 @@ export const Hero = () => {
           }`}
           style={{ transitionDelay: '0.6s' }}
         >
-          <span className="animated-underline text-white">"I engineer sleek, high-performance websites and web apps using modern front-end and back-end technologies."</span>
+          <span className="animated-underline text-white">"I engineer and design sleek, high-performance websites, softwares and web applications using modern front-end and back-end technologies."</span>
         </div>
         
            <br />
@@ -84,7 +84,7 @@ export const Hero = () => {
           }`}
           style={{ transitionDelay: '1s' }}
         >
-          A creative front-end and back-end web developer who transforms ideas into engaging, fast, and interactive 
+          A creative web designer and full stack developer who transforms ideas into engaging, fast, and interactive 
           digital experiences using HTML, CSS, JavaScript, React, PHP and other backend and animation frameworks and tools.
         </p>
 

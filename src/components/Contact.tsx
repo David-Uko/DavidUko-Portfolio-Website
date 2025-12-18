@@ -95,7 +95,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   href="mailto:jordanlee.dev@gmail.com"
                   className="text-foreground hover:text-neon-teal transition-colors animated-underline"
                 >
-                 Phone Number: +2349031484432
+                 Phone Number: +12268391350
                 </a>
             </div>
 

@@ -50,7 +50,7 @@ export const Hero = () => {
           <div className="w-32 h-32 mx-auto rounded-full bg-gradient-card border-2 border-neon-teal glow-teal flex items-center justify-center">
             <span className="text-4xl font-bold text-neon-teal">DU</span>
           </div>
-        </div>
+        </div> 
 
         {/* Main Headline */}
         <h1 
@@ -60,7 +60,7 @@ export const Hero = () => {
           style={{ transitionDelay: '0.4s' }}
         >
           <span className="block text-foreground">Hi, I'm</span>
-          <span className="block bg-gradient-hero bg-clip-text text-transparent animate-pulse-glow">
+          <span className="block bg-gradient-hero bg-clip-text text-transparent animate-pulse-glow">  
             David Uko
           </span>
         </h1>
@@ -74,7 +74,7 @@ export const Hero = () => {
         >
           <span className="animated-underline text-white">"I engineer and design sleek, high-performance websites, softwares and web applications using modern front-end and back-end technologies."</span>
         </div>
-        
+
            <br />
 
         {/* Mission Statement */}
@@ -85,7 +85,7 @@ export const Hero = () => {
           style={{ transitionDelay: '1s' }}
         >
           A creative web designer and full stack developer who transforms ideas into engaging, fast, and interactive 
-          digital experiences using HTML, CSS, JavaScript, React, PHP and other backend and animation frameworks and tools.
+          digital experiences using HTML, CSS, JavaScript, React, PHP and other backend and animation frameworks and tools. I was sun
         </p>
 
         {/* CTA Buttons */}
@@ -93,7 +93,7 @@ export const Hero = () => {
           className={`flex flex-col sm:flex-row gap-4 justify-center mb-16 transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
-          style={{ transitionDelay: '1.2s' }}
+          style={{ transitionDelay: '1.2s' }}    
         >
           <Button 
             onClick={scrollToProjects}
@@ -115,7 +115,7 @@ export const Hero = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div 
+        <div     tge
           className={`transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}

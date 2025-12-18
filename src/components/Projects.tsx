@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Zap, ShoppingCart, Camera } from "lucide-react";
+import { ExternalLink, Github, Zap, ShoppingCart, Camera, TypeIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -32,7 +32,7 @@ const projects = [
     gradient: "from-neon-pink to-neon-teal"
   },
     {
-    title: "Dropps",
+    title: "Dropps", 
     description: "Droops Laundry is a convenient and reliable online laundry service platform designed to make washing and dry-cleaning effortless. The website allows users to schedule pick-ups and deliveries from the comfort of their homes, view service options, and track orders in real time",
     tech: [ "Laravel", "Vanilla JS", "AOS.js"],
     animation: "Content such as text, images, and icons smoothly appear as the user scrolls, enhancing the interface with subtle motion that keeps the design sleek, engaging, and professional.",
@@ -40,14 +40,17 @@ const projects = [
     liveUrl: "https://www.dropps.com/",
     gradient: "from-neon-violet to-neon-pink"
   },
+    
     {
-    title: "Tweet Buzz",
+    title: "Tweet Buzz app",
     description: "Tweet Buzz is a web 3 blockchain application designed and built to monitor spikes and trending keywords on Twiiter X. The app alerts its users when certain keywords or information are trending on X. Users are able to actively select the keywords or information they want to be notified about",
     tech: ["Python", "MySQL", "Vanilla JS", "Cardano", "AOS.js"],
     animation: "Elements like text, images, and icons fade or slide into view as you scroll, creating a modern and polished feel that adds life to the layout while maintaining a professional look.",
     icon: ShoppingCart,
     gradient: "from-neon-violet to-neon-pink"
   },
+    
+
 
   {
     title: "Signal Pay",
@@ -57,7 +60,7 @@ const projects = [
     icon: ShoppingCart,
     gradient: "from-neon-violet to-neon-pink"
   },
-  
+
     {
     title: "Youth Music", 
     description: "Youth Music is a leading charity dedicated to supporting young people through music—especially those facing social or economic barriers.",
@@ -108,7 +111,7 @@ export const Projects = () => {
                   {project.description}
                 </CardDescription>
               </CardHeader>
-
+                    
               <CardContent className="space-y-4">
                 {/* Tech Stack */}
                 <div>
@@ -124,7 +127,7 @@ export const Projects = () => {
                     ))}
                   </div>
                 </div>
-
+                   
                 {/* Animation Feature */}
                 <div>
                   <h4 className="text-sm font-semibold text-neon-teal mb-2">Animation Highlight</h4>
@@ -137,7 +140,7 @@ export const Projects = () => {
                     size="sm"
                     className="flex-1 bg-neon-teal hover:bg-neon-teal/80 text-background font-medium"
                     asChild
-                  >
+                  >    
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-1 h-3 w-3" />
                       Live Demo

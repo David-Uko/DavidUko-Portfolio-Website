@@ -16,7 +16,7 @@ const projects = [
     title: "Empower Her Remotely",
     description: "A platform built to equip men and women—especially those in underserved and underrepresented communities—with the knowledge, tools, and network they need to thrive in the global remote economy.",
     tech: ["React", "PHP", "Vanilla JS", "AOS.js"],
-    animation: "Elements like text, images, and icons fade or slide into view as you scroll, creating a modern and polished feel that adds life to the layout while maintaining a professional look.",
+    animation: "Scrolling reveals content through smooth transitions, allowing text, visuals, and icons to emerge naturally, adding depth and visual interest without compromising a clean, professional appearance.",
     icon: ShoppingCart,
     liveUrl: "https://www.empowerherremotely.com/",
     gradient: "from-neon-violet to-neon-pink"
@@ -35,20 +35,29 @@ const projects = [
     title: "Dropps",
     description: "Droops Laundry is a convenient and reliable online laundry service platform designed to make washing and dry-cleaning effortless. The website allows users to schedule pick-ups and deliveries from the comfort of their homes, view service options, and track orders in real time",
     tech: [ "Laravel", "Vanilla JS", "AOS.js"],
-    animation: "Elements like text, images, and icons fade or slide into view as you scroll, creating a modern and polished feel that adds life to the layout while maintaining a professional look.",
+    animation: "Content such as text, images, and icons smoothly appear as the user scrolls, enhancing the interface with subtle motion that keeps the design sleek, engaging, and professional.",
     icon: ShoppingCart,
     liveUrl: "https://www.dropps.com/",
     gradient: "from-neon-violet to-neon-pink"
   },
     {
     title: "Tweet Buzz",
-    description: "Droops Laundry is a convenient and reliable online laundry service platform designed to make washing and dry-cleaning effortless. The website allows users to schedule pick-ups and deliveries from the comfort of their homes, view service options, and track orders in real time",
-    tech: ["Python", "MySQL", "Vanilla JS", "AOS.js"],
+    description: "Tweet Buzz is a web 3 blockchain application designed and built to monitor spikes and trending keywords on Twiiter X. The app alerts its users when certain keywords or information are trending on X. Users are able to actively select the keywords or information they want to be notified about",
+    tech: ["Python", "MySQL", "Vanilla JS", "Cardano", "AOS.js"],
     animation: "Elements like text, images, and icons fade or slide into view as you scroll, creating a modern and polished feel that adds life to the layout while maintaining a professional look.",
     icon: ShoppingCart,
-    liveUrl: "",
     gradient: "from-neon-violet to-neon-pink"
   },
+
+  {
+    title: "Signal Pay",
+    description: "Signal Pay is a blockchain telegram mini bot built and designed to help traders and business men trade coins in real time, buy crypto, carry out other web3 and trading activities",
+    tech: ["React","Python", "MySQL", "TypeScript", "Cardano", "AOS.js"],
+    animation: "As users scroll through the page, key elements gently animate into view, bringing movement and energy to the layout while preserving a refined and professional aesthetic.",
+    icon: ShoppingCart,
+    gradient: "from-neon-violet to-neon-pink"
+  },
+  
     {
     title: "Youth Music", 
     description: "Youth Music is a leading charity dedicated to supporting young people through music—especially those facing social or economic barriers.",

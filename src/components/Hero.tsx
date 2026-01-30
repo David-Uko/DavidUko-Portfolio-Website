@@ -85,7 +85,7 @@ export const Hero = () => {
           style={{ transitionDelay: '1s' }}
         >
           A creative web designer and full stack developer who transforms ideas into engaging, fast, and interactive 
-          digital experiences using HTML, CSS, JavaScript, React, PHP and other backend and animation frameworks and tools. I was sun
+          digital experiences using HTML, CSS, JavaScript, React, PHP and other backend and animation frameworks and tools.
         </p>
 
         {/* CTA Buttons */}
@@ -115,7 +115,7 @@ export const Hero = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div     tge
+        <div    
           className={`transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
